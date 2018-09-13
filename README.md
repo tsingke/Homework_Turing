@@ -18,9 +18,13 @@
  ```
  作业提交过程
  
- * 先下载本项目到本地: $git clone git@github.com:tsingke/Homework_Neumann.git
- * 然后复制一份`李雷`的文件夹，接着把`李雷`的文件夹重命名为自己的文件夹，替换里面相应内容；
- * 最后push提交自己的作业: $git push 
+ * 1 先克隆本项目到本地机器: $git clone https://github.com/tsingke/Homework_Turing
+ * 2 然后修改项目：复制一份`李雷`的文件夹，接着把`李雷`的文件夹重命名为自己的文件夹，替换里面相应内容；
+ * 3 稍后把所有修改添加到缓冲区:     $ git add . 
+ * 4 接着添加版本修改标记：          $ git commit -m "add the source code and corresponding report"
+ * 5 最后推送作业到本项目:           $ git push 
+ 
+ 
 ```
 
 作业文件路径范例： 
