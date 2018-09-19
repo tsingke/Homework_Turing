@@ -21,9 +21,9 @@ OOP课程作业项目：第1次实验
  作业提交过程（基于git bash）
  * 0. 本地磁盘建立个人作业文件夹（如OOP_Work），进入该文件夹，右键打开 git bash here
  * 1 克隆远程作业项目到本地机器（使用的是项目的ssh地址，不是https地址）:  $ git clone git@github.com:tsingke/Homework_Turing.git
- * 2 克隆完后切换到名为Homework_Turing的作业项目内（这个才是git管理的文件夹）: cd Homeork_Turing/
+ * 2 克隆完后切换到名为Homework_Turing的作业项目内（这个才是git管理的文件夹）: $ cd Homeork_Turing/
  * 3 写作业啦：复制一份`李雷`的文件夹，接着把`李雷`的文件夹重命名为自己的文件夹，替换里面相应内容为自己作业内容；
- * 4 把所有修改添加到缓冲区:     $ git add . 
+ * 4 把所有修改添加到缓冲区:     $ git add .  (不要落下后面的'.')
  * 5 接着添加版本修改标记：      $ git commit -m "自己在引号内写注释内容"
  * 6 最后推送作业到本项目:       $ git push origin master
 ```
