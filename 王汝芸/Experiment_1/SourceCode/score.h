@@ -14,11 +14,12 @@
     Function Declaration
 *-----------------------------------*/
 
-typedef struct 
+typedef struct //学号 姓名 平时成绩 实验成绩 期末成绩
 {
 	char number[10];  //学号
 	char name[10];    //姓名
 	float dailyScore;   //平时成绩
+	float expScore;  //实验成绩
 	float finalScore;   //期末成绩
 	float generalScore; //总评成绩
 	
@@ -28,7 +29,7 @@ typedef struct
 /*---------------函数声明-------------------*/
 
 //1.读取学生基本数据
-void readData(SS stu[], int N);
+//void readData(SS stu[], int N);
 SS* readDataFromFile(int *N);
 
 //2.计算N个学生的总评成绩
