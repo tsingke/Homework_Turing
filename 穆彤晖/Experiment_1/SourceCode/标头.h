@@ -1,11 +1,4 @@
-/*************************************************
-** 源文件   : score.c
-** 功能说明 : Function Definations
-** 创建时间 : 2018-9-2/17:35
-/**************************************************/
-
-/*----------------头文件--------------*/
-
+#pragma once
 #include "score.h"
 #include <math.h>
 #include <stdlib.h>
@@ -19,7 +12,7 @@ void readData(SS stu[], int N)
 
 	printf("请按照如下格式输入学生信息：学号,姓名,平时成绩,期末成绩\n");
 
-	for(int i = 0; i < N; i++)
+	for (int i = 0; i < N; i++)
 	{
 		printf("第%d个学生:", i + 1);
 		scanf("%s %s %f %f", &stu[i].number, &stu[i].name, &stu[i].dailyScore, &stu[i].finalScore);
