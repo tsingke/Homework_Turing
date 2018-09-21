@@ -25,6 +25,8 @@
 *.la
 *.a
 *.lib
+*.vcxproj
+*.filters
 
 # Executables
 *.exe
