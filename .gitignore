@@ -27,6 +27,11 @@
 *.lib
 *.vcxproj
 *.filters
+*.dsp
+*.dsw
+*.ncb
+*.opt
+*.plg
 
 # Executables
 *.exe
