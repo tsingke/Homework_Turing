@@ -7,6 +7,8 @@
 
 <不要重复生成公钥，切忌修改公钥，请勿丢失公钥>
 
+![pic](https://github.com/tsingke/Homework_Turing/blob/master/%E3%80%90%E4%BD%9C%E4%B8%9A%E4%BB%BB%E5%8A%A1%E3%80%91/%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A%E6%A8%A1%E6%9D%BF/ssh.png)
+
 **重要的事情说3遍**。
 
 ----
