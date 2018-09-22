@@ -14,36 +14,32 @@
     Function Declaration
 *-----------------------------------*/
 
-typedef struct 
+struct Student
 {
-	char number[10];  //学号
-	char name[10];    //姓名
-	float dailyScore;   //平时成绩
-	float finalScore;   //期末成绩
-	float generalScore; //总评成绩
-	
-}SS;
+    string sid;   //学号
+    string name;
+    int score[4];   //四种成绩
+    int ran;    //名次
+};
+Student stu[6];
 
 
 /*---------------函数声明-------------------*/
 
-//1.读取学生基本数据
-void readData(SS stu[], int N);
-SS* readDataFromFile(int *N);
 
-//2.计算N个学生的总评成绩
+//1.计算N个学生的总评成绩及排名
 void calcuScore(SS stu[], int N);
 
 
-//3.根据总评成绩排名
-void sortScore(SS stu[], int N);
+//2.查询
+void searchScore(SS stu[], int N);
 
 
-//4.按照一定的格式输出N个学生的完整信息
+//3.计算均值和方差
 void printOut(SS stu[], int N);
 
 
- 
+
 
 #endif
 
