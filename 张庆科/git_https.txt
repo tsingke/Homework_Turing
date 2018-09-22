@@ -1,1 +1,0 @@
-How to use https to clone origin program.

@@ -1,0 +1,13 @@
+﻿生成启动时间为 2018/9/21 1:17:28。
+     1>项目“C:\Users\16477\Desktop\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt "源.cpp"
+         源.cpp
+     1>c:\users\16477\desktop\consoleapplication1\consoleapplication1\stdafx.h(2): error C2059: 语法错误:“常量”
+     1>c:\program files (x86)\microsoft visual studio 12.0\vc\include\sal.h(2381): error C2143: 语法错误 : 缺少“;”(在“{”的前面)
+     1>c:\program files (x86)\microsoft visual studio 12.0\vc\include\sal.h(2381): error C2447: “{”: 缺少函数标题(是否是老式的形式表?)
+     1>已完成生成项目“C:\Users\16477\Desktop\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.vcxproj”(Build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:00.83

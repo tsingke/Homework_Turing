@@ -1,1 +1,0 @@
-git@github.com:tsingke/Homework_Turing.git
