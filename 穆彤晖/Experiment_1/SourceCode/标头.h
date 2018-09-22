@@ -1,31 +1,28 @@
 #pragma once
+/*************************************************
+* Head File   : SCORE.h
+* File Usage  : 学生管理系统头文件
+* Create Time : 2018-9-2/17:25
+/**************************************************/
 #include "score.h"
 #include <math.h>
 #include <stdlib.h>
 #include <stdio.h>
-
-/*----------------函数定义-------------*/
-
-//1.读取学生基本数据
-void readData(SS stu[], int N)
+/*               定义函数              */
+void readData(SS stu[], int n);
 {
+	printf("请按以下格式输入学生信息：学号,姓名,平时成绩,期末成绩\n")；
+		for (int i = 0; i < 7; i++)
+		{
+			printf("第%d个学生", i + 1);
+			scanf("%s %s %f %f", &stu[i].number, &stu[i].name, &stu[i].dailyScore, &stu[i].finalScore);
+			printf("\n");
 
-	printf("请按照如下格式输入学生信息：学号,姓名,平时成绩,期末成绩\n");
-
-	for (int i = 0; i < N; i++)
-	{
-		printf("第%d个学生:", i + 1);
-		scanf("%s %s %f %f", &stu[i].number, &stu[i].name, &stu[i].dailyScore, &stu[i].finalScore);
-		printf("\n");
-	}
-
-	printf("------成绩录入完毕!--------\n");
-
-
-
+		}
+	
 }
-
-SS* readDataFromFile(int *N)
+printf("----------------成绩录入完毕------------------\n");
+*readDataFromFile(int *N)
 {
 
 	printf("\n\n------第一步: 从文件读取学生的成绩信息--------\n\n");
@@ -62,7 +59,7 @@ SS* readDataFromFile(int *N)
 	while ((!feof(fp)) && (index < count))
 	{
 
-		//读入文件数据到内存
+		//读入文件数据到内存	
 		fscanf(fp, "%s%s%f%f\n", (stu[index].number), (stu[index].name), &stu[index].dailyScore, &stu[index].finalScore);
 
 		//输出原始学生信息
