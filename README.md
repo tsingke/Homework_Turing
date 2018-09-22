@@ -13,9 +13,9 @@
 ### 1. 先-配置git信息（自报家门）
 任何同学第一次使用git前，先给自己的机器配置好名字,这样你提交作业时，才知道作业的实际贡献者是谁
 
-`$ git config --global user.name "你的名字"`
+`$ git config --global user.name "写你的名字"`
 
-`$ git config --global user.email "你的邮箱"`
+`$ git config --global user.email "写你的邮箱"`
 
 注：只配置一次即可，后续提交作业时无须再配置
 
