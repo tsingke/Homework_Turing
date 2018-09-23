@@ -3,7 +3,7 @@
 
 ### 1. 准备：检查本地生成的秘钥
 
-请同学们先打开个人电脑磁盘C盘下面的`.ssh文件夹`（下图所示），包含两个文件，其中一个是公钥id_rsa.pub，另一个是私钥id_rsa。 接着，请查看有没有修改公钥文件id_rsa.pub，如果已重命名，请再改回来，否则后续作业无法正常提交！
+请同学们先打开个人电脑磁盘C盘下面的`.ssh文件夹`，其中包含两个文件：一个是公钥id_rsa.pub，另一个是私钥id_rsa。 接着，请查看公钥文件名id_rsa.pub是否被修改，如果已重命名，请再改回来，否则后续作业无法正常提交！
 
 ![pic](https://github.com/tsingke/Homework_Turing/blob/master/%E3%80%90%E4%BD%9C%E4%B8%9A%E4%BB%BB%E5%8A%A1%E3%80%91/%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A%E6%A8%A1%E6%9D%BF/ssh.png)
 
