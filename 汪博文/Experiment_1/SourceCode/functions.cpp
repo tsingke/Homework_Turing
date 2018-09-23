@@ -48,7 +48,7 @@ int sort()
 	int i;
 	for (i = 0; i < number; i++)
 	{
-		stu[i].score4 = 0.2*stu[i].score1 + 0.2*stu[i].score2 + 0.8*stu[i].score3;
+		stu[i].score4 = 0.2*stu[i].score1 + 0.2*stu[i].score2 + 0.6*stu[i].score3;
 	}
 
 	for (i = 0; i < number - 1; i++)

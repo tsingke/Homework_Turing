@@ -17,19 +17,19 @@ int main()
 	in.open("data.txt");
 	char a[200];
 	char b[7][30];
-	for (int i = 1; i <= 133; i++)
+	for ( i = 1; i <= 133; i++)
 		in >> a[i];
 	int temp = 1;
-	for (int i = 1; i <= 6; i++)
+	for ( i = 1; i <= 6; i++)
 	{
-		for (int j = 1; j <= 22; j++)
+		for ( j = 1; j <= 22; j++)
 		{
 			b[i][j] = a[temp];
 			temp++;
 		}
 	}
 	int name_temp = 0;
-	for (int i = 1; i <= 6; i++)
+	for ( i = 1; i <= 6; i++)
 	{
 		for (int j = 1; j <= 16; j++)
 		{
