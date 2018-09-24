@@ -16,7 +16,7 @@
 SS* readDataFromFile(int *N)
 {
 
-	printf("\n\n                                                 ------ 学生的成绩信息--------\n\n");
+	printf("\n\n          ------ 学生的成绩信息 --------\n\n");
 
 	SS *stu;// 开辟新空间,存取文件中的每个学生信息
 
@@ -44,21 +44,18 @@ SS* readDataFromFile(int *N)
 
 	//2.给所有学生分配存储空间
 	stu = (SS*)malloc(count * sizeof(SS));
-
-
+	
+	
 	//3.读取每条学生的信息
 	while ((!feof(fp)) && (index < count))
 	{
-
 		//读入文件数据到内存	
-		fscanf_s(fp, "%s %s %f %f %f\n", stu[index].number, stu[index].name, &stu[index].dailyScore, &stu[index].expScore, &stu[index].finalScore);
-
+		fscanf(fp, "%s %s %f%f%f\n", stu[index].number, stu[index].name, &stu[index].dailyScore, &stu[index].expScore, &stu[index].finalScore);
 		//输出原始学生信息
 		printf("学号%s	平时成绩：%4.2f分	实验成绩：%4.2f分	期末成绩:%4.2f分\n", stu[index].number, stu[index].dailyScore, stu[index].expScore, stu[index].finalScore);
 
 
 		index++;
-
 	}
 
 	fclose(fp);
@@ -71,7 +68,7 @@ void calcuScore(SS stu[], int N)
 {
 
 
-	printf("\n\n                                                           ------计算每个学生的总评成绩--------\n\n");
+	printf("\n\n          ------计算每个学生的总评成绩--------\n\n");
 
 	for (int i = 0; i < N; i++)
 	{
@@ -115,12 +112,12 @@ void printOut(SS stu[], int N)
 {
 
 
-	printf("\n                                                            ------ 根据总成绩输出学生排名信息!------\n\n");
+	printf("\n          ------ 根据总成绩输出学生排名信息------\n\n");
 
 	for (int i = 0; i < N; i++)
 	{
 
-		printf("第%d名信息 学号：%s	姓名:%s		总成绩:%4.2f分\n", i + 1, &(stu[i].number[0]), &(stu[i].name[0]), stu[i].generalScore);
+		printf("NO.%d 学号：%s	姓名:%s		总成绩:%4.2f分\n", i + 1, &(stu[i].number[0]), &(stu[i].name[0]), stu[i].generalScore);
 	}
 
 
@@ -134,7 +131,7 @@ void searchScore(SS stu[])
 	printf("请输入学号：\n");
 	//printf("%c", stu[0].number[0]);
 
-	for (int j = 0; j < 10; j++)
+	for (int j = 0; j < 6; j++)
 	{
 		scanf_s("%c", &number[j]);
 	}
@@ -142,11 +139,11 @@ void searchScore(SS stu[])
 
 	for (int i = 0; i < 6; i++)
 	{
-		for (int j = 0; j < 10; j++)
+		for (int j = 0; j < 6; j++)
 		{
 			if (number[j] == stu[i].number[j])
 			{
-				if (j == 9)
+				if (j == 5)
 				{
 					printf("* %s	平时成绩：%4.2f分	实验成绩：%4.2f分	期末成绩:%4.2f分    总成绩:%4.2f分    ", (stu[i].number), stu[i].dailyScore, stu[i].expScore, stu[i].finalScore, stu[i].generalScore);
 
