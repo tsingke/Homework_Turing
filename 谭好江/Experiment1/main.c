@@ -10,7 +10,7 @@ int main()
 {
 	int N = 0;        //学生总数
 	SS  *pstu = NULL;    //结构体数组指针
-	 //读取数据信息
+	//读取数据信息
 
 		/*主菜单*/
 
@@ -31,7 +31,7 @@ int main()
 		printf("输入学号查询成绩\n");
             searchScore(pstu);
 		
-		printf("统计出该课程成绩的均值和方差\n");
+		printf("\n统计出该课程成绩的均值和方差\n");
             average(pstu, N);
 			variance(pstu, N);
 		
