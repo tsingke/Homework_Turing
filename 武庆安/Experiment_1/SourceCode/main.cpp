@@ -1,7 +1,6 @@
 #define _CRT_SECURE_NO_DEPRECATE
 #define _CRT_SECURE_NO_WARNINGS
 #include<iostream>
-#include<cstdio>
 #include<cmath>
 #include<fstream>
 #include"标头.h"
@@ -11,13 +10,13 @@ using namespace std;
 int main()
 {
 	readdata_txt();
-	cout << "readdata_txt()-over" << endl;
+	cout << "\nreaddata_txt()-over\n" << endl;
 	calc_all_stu_final_score();					//计算所有学生的最终成绩
 	sort_all_stu_rank();						//对所有学生进行排名
 	cout<<"输入0 ：退出学生成绩管理系统\n输入1 ：全部学生成绩预览\n输入2 ：按学号查询学生信息\n输入3 ：查看学生成绩均值、方差并进行成绩分析\n"<<endl;
 	while (1) 
 	{
-		printf("\n请您输入指令：");
+		cout<<"\n请输入指令："<<endl;
 		int n = 0;
 		cin >> n;
 		if (n == 0) break;
@@ -30,17 +29,7 @@ int main()
 			}
 			case 2: 
 			{
-				string n2;
-				while (1) 
-				{
-					cout << "输入 over ：结束查询；输入学号继续进行查找。\n"<< endl;
-					cin >> n2;
-					if (n2 == string("over")) break;
-					else 
-					{
-						search_stu(n2);				//F3按学号查找学生成绩信息
-					}
-				}
+				search_stu();						//F3按学号查找学生成绩信息
 				break;
 			}
 			case 3: 
