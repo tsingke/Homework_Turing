@@ -42,7 +42,7 @@
  
 4. $ git add .  
 
-5. $ git commit -m "第x次实验作业-时间"
+5. $ git commit -m "第x次实验作业"
 
 6. $ git push origin master
 
