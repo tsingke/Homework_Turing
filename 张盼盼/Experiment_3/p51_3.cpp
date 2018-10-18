@@ -31,5 +31,6 @@ int main()
         printf("%f ", *p);
     }
     printf("\n正数:%d\n负数:%d\n整数:%d\n小数:%d\n", cnt1, cnt2, cnt3, cnt4);
+    delete( q );
 
 }
