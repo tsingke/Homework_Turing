@@ -1,36 +1,42 @@
-#include <cstdio>
-#include <iostream>
-#include <cstring>
-#include <algorithm>
+#include<iostream>
+#include<cstring>
 using namespace std;
 
+float checkAgeScore(int age, float score)
+{
+	int flag=1;
+	if (flag ==1)
+	{
+		if (age > 25 || age < 16)  throw age;
+		if (score < 0 || score>5) throw score;
+		flag = 0;
+		return score * 20.00;
+	}
+	if (flag == 0)
+		return 0;
+}
 int main()
 {
-    double *q, *p;
-    q = p = new double[25];
-    int n, i , j;
-    int cnt1  = 0, cnt2 = 0, cnt3 = 0, cnt4 = 0;
-    scanf("%d", &n);
-    for( i = 0; i<n; i++)
-    {
-        scanf("%lf", p);
-        int temp = int( *p );
-        if( *p == temp )
-            cnt3++;
-        if( *p != temp )
-            cnt4++;
-        if( *p < 0 )
-            cnt2++;
-        if( *p > 0 )
-            cnt1++;
-        p++;
-    }
-    sort( q, q+n);
-    for( p = q; p < q+n; p++)
-    {
-        printf("%f ", *p);
-    }
-    printf("\n正数:%d\n负数:%d\n整数:%d\n小数:%d\n", cnt1, cnt2, cnt3, cnt4);
-    delete( q );
+	char name[20] ;
+	int age;
+	float score;
+	cin >>name >>age >> score;
+	try
+	{
+		checkAgeScore(age, score);
+	}
+	catch (int)
+	{
+		cout << "expect of age,score return 0" << endl;
+	}
+	catch (float)
+	{
+		cout << "expect of score ,score return 0" << endl;
+	}
+	cout << "name:" << name<<endl;
+	cout << "age:" << age << endl;
+	cout << "score" << checkAgeScore(age, score) << endl;
+	system("pause");
 
+	return 0;
 }
