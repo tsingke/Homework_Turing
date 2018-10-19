@@ -27,25 +27,29 @@ int main()
 				p[j+k]=temp;
 			}
 	}
+
+	int l=0;
 	for(i=0;i<20;i++)
 	{
 		cout<<p[i]<<"  ";
+		l+=p[i];
 	}
+	l=l/20;
+
+	int s=0;
+	for(i=0;i<20;i++)
+	{
+		s=s+(l-p[i])*(l-p[i]);
+
+	}
+	s=s/20;
+	cout<<endl;
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-		cout << "正数为" << a << endl;
+		cout <<"平均数为"<<l<<endl<<"方差为"<<s<<endl<< "正数为" << a << endl;
 		cout << "负数为" << b<<endl;
 		delete[]p;
 
