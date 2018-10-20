@@ -17,7 +17,7 @@ struct student
 
 
 
-void main()
+int main()
 
 {
 	struct student stu[6] = { {20171100,"zhang",84,96},{20171101,"wang",78,86},{20171102,"zhao",80,86},{20171103,"liu",69,75},{20171104,"TomHanks",85,90},{20171105,"Jeny",90,96} };
