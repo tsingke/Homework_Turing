@@ -22,6 +22,7 @@ int selectsort( int *a )
 
 	}
 
+	cout << "ÅÅÐò ";
 	for (j = 0; j < length; j++)
 	{
 		cout << a[j] << ' ';
@@ -68,7 +69,7 @@ int main()
 	cout << "·½²î " << m << endl;
 
 	selectsort(p);
-
+	delete [20]p;
 	system("pause");
 	return 0;
 }
