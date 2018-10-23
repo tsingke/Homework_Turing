@@ -24,6 +24,17 @@ void fun1(double *p)
 
 void fun2(double *p)
 {
+	double sum = 0, a, b = 0;
+	for (int i = 0; i < 20; i++)
+		sum = sum + *p;
+	a = sum / 20;
+	for (int i = 0; i < 20; i++)
+		b = b + pow(p[i] - a, 2);
+	cout << "¾ùÖµ£º" << a << " ·½²î£º" << b << endl;
+}
+
+void fun3(double *p)
+{
 	int a;
 	for(int i=0;i<20;i++)
 		for (int j = i + 1; j < 20; j++)
@@ -52,6 +63,8 @@ int main()
 	fun1(p);
 
 	fun2(p);
+
+	fun3(p);
 
 	delete[]p;
 	system("pause");
