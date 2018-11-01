@@ -1,0 +1,5 @@
+﻿  源.cpp
+e:\c++作业\构造函数析构函数\构造函数析构函数\构造函数析构函数\源.cpp(18): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\string.h(133): note: 参见“strcpy”的声明
+e:\c++作业\构造函数析构函数\构造函数析构函数\构造函数析构函数\源.cpp(36): error C2664: “student::student(const student &)”: 无法将参数 1 从“const char [9]”转换为“char *”
+  e:\c++作业\构造函数析构函数\构造函数析构函数\构造函数析构函数\源.cpp(36): note: 从字符串文本转换将丢失 const 限定符(请参阅 /Zc:strictStrings)
