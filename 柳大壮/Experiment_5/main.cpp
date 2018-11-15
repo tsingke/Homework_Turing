@@ -6,7 +6,7 @@ void menu();
 void OutputStu(Student *array);
 void InputStu(Student *array);
 int SearchStu(Student *array, char *na);
-int count = 0;
+int count0 = 0;
 int main()
 {
 	Student array[N];
@@ -47,8 +47,8 @@ void menu()
 
 void OutputStu(Student *array)
 {
-	cout << "学生总人数 = " << count << endl;
-	for (int i = 0; i < count; i++)
+	cout << "学生总人数 = " << count0 << endl;
+	for (int i = 0; i < count0; i++)
 	{
 		array[i].Display();
 	}
@@ -56,7 +56,7 @@ void OutputStu(Student *array)
 int SearchStu(Student* array, char* na)
 {
 	int i, j = N;
-	for ( i = 0; i < count; i++)
+	for ( i = 0; i < count0; i++)
 	{
 		if (strcmp(array[i].GetName(), na) == 0)
 			j = i;
@@ -68,8 +68,8 @@ void InputStu(Student *array)
 	char ch;
 	do
 	{
-		array[count].Input();
-		count++;
+		array[count0].Input();
+		count0++;
 		cout << "继续输入吗？(Y or N)" << endl;
 		cin >> ch;
 	} while (ch == 'Y');

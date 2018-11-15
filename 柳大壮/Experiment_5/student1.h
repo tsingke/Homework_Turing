@@ -19,7 +19,7 @@ public:
 	~Student();
 	char* GetName();
 	char* GetID();
-	char* Getnumber();
+	char* GetNumber();
 	char* GetSpec();
 	int Getage();
 	void Display();

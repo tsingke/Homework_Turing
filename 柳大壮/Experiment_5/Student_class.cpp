@@ -23,8 +23,9 @@ Student::Student(const Student &per)
 		name = new char[strlen(per.name) + 1];
 		strcpy(name, per.number);
 	}
-	strcpy(ID, per.ID);
-	strcpy(number, per.number);
+	strcpy_s(ID, per.ID);
+	strcpy_s(number, per.number);
+	strcpy_s(speciality, per.speciality);
 	age = per.age;
 }
 Student::~Student()
@@ -42,7 +43,7 @@ char* Student::GetID()
 }
 char* Student::GetSpec()
 {
-	return Speciality;
+	return speciality;
 }
 int Student::Getage()
 {
@@ -52,7 +53,7 @@ char* Student::GetNumber()
 {
 	return number;
 }
-void Student::Dispay()
+void Student::Display()
 {
 	cout << "姓  名：" << name << endl;
 	cout << "身份证：" << ID << endl;
