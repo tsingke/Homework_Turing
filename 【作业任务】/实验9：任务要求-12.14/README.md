@@ -34,7 +34,7 @@
 
  **报告撰写要求**： 本次提交纸质版报告(周五上课前收作业！)，报告里请标明题号，只写出代码即可（带上注释）
 
-（报告模板请点这里下载）。
+（报告模板请[点这里](https://github.com/tsingke/Homework_Turing/raw/master/%E3%80%90%E4%BD%9C%E4%B8%9A%E4%BB%BB%E5%8A%A1%E3%80%91/%E5%AE%9E%E9%AA%8C9%EF%BC%9A%E4%BB%BB%E5%8A%A1%E8%A6%81%E6%B1%82-12.14/C%2B%2B%E7%BB%BC%E5%90%88%E5%AE%9E%E6%88%98%E9%A1%B9%E7%9B%AE%EF%BC%9A%E7%B1%BB%E7%9A%84%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%BA%94%E7%94%A8-%E6%9C%9F%E6%9C%AB%E8%80%83%E8%AF%84.docx)下载）。
  
 ---
 
