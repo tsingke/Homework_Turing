@@ -14,7 +14,7 @@
 
 要求：类内包含向量的2个维度数据，横坐标维度x和纵坐标维度y；该向量类具有的功能：可以初始化向量对象数据、输出向量对象的数据、以成员函数形式重载运算符“+”实现两个向量对象的求和操作、以友元函数形式重载重载运算符“-”实现两个向量对象的求差操作。
 
-![image](https://github.com/tsingke/Homework_Turing/blob/master/%E3%80%90%E4%BD%9C%E4%B8%9A%E4%BB%BB%E5%8A%A1%E3%80%91/%E5%AE%9E%E9%AA%8C9%EF%BC%9A%E4%BB%BB%E5%8A%A1%E8%A6%81%E6%B1%82-12.14/SourceCode/vec.png)
+![image](https://github.com/tsingke/Homework_Turing/blob/master/%E3%80%90%E4%BD%9C%E4%B8%9A%E4%BB%BB%E5%8A%A1%E3%80%91/%E5%AE%9E%E9%AA%8C9%EF%BC%9A%E4%BB%BB%E5%8A%A1%E8%A6%81%E6%B1%82-12.14/SourceCode/VECTOR.png)
 
 
 （3）项目三：设计一个组合类解决经典约瑟夫环问题（50分）
